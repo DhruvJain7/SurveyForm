@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      
+      <p id="description">Thank you for taking the time to help us improve the platform.</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label"for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label"for="age">Age(optional)<input
+        id="number" name="age" type="number" min="1" max="120" placeholder="Age"/></label>
+        <p>What option best describes your current role?</p>
+        <label for="dropone">
+          <select id="dropdown" name="dropdown">
+            <option value="">Select your current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time Job</option>
+            <option value="3">Full time Learner</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </label>
+         <p>Would you recommend our services to a friend?</p>
+         <label for="recommend"><input id="recommend" type="radio" name="account-type" class="inline" value="1" /> Definitely</label>
+        <label for="recommend"><input id="recommend" type="radio" name="account-type" value="2"class="inline"/>Maybe</label>
+        <label for="recommend"><input id="recommend" class="inline" type="radio"
+name="account-type" value="3"/>Not Sure</label>
+<p>What is your favourite feature of our service?</p>
+<label for="droptwo">
+    
+          <select id="dropdown" name="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Open Source</option>
+            <option value="4">Community</option>
+          </select>
+        <p> What would you like to be improved?(Check all that apply)</p>
+        <label for="check">
+        <input id="checkboxes" type="checkbox" value="1" name="check" class="inline">Front-end Projects
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox" value="2" name="check" class="inline">Back-end Projects
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox" value="3" name="check" class="inline">Data Visualisation
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox" value="4" name="check"  class="inline">Challenges
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox" value="5" name="check" class="inline">Open Source Community
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="6" class="inline">Gitter help rooms 
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="7" class="inline">Videos
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="8" class="inline">City Meetups
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="9" class="inline">Wiki
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="10" class="inline">Forum
+        </label>
+        <label for="check">
+        <input id="checkboxes" type="checkbox"  name="check" value="11" class="inline">Additional Courses
+        </label>
+<p>Any comments or suggestions?</p>
+<label for="comment">
+          <textarea id="comment" name="comment" rows="5" cols="30" placeholder="Enter your suggestions here...."></textarea>
+        </label>
+    
+      <input type="submit" value="Submit" id="submit" />
+
+
+
+      </form>
+      </body>
+      <footer>
+        <p>Made by Dhruv Jain</p>
+      </footer>
+      </html>
